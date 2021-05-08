@@ -9,6 +9,9 @@
 // null
 // "" !== null
 
+
+/* console.log(objeto) */
+
 let nuevaVariable = true;
 let nombreVariable = 1;
 
@@ -49,6 +52,24 @@ let alumnos = [
     cargo: "pilar",
   },
 ];
+
+/* const listaDeAlumnos = alumnos.map((alumno) => {
+  return alumno
+})
+console.log(listaDeAlumnos) */
+
+const numeros = [1,2,3,4,5]
+
+/* const Numeritos = numeros.forEach(numero => {
+  console.log(numero)
+}); */
+/*          0      0 < 4               0++ */
+for (let i = 0; i < numeros.length; i++) {
+  const element = numeros[i];
+  console.log(element)
+  console.log("elemento")
+}
+
 let productos = {
   nombre: "polera",
   color: "verde",
@@ -56,12 +77,17 @@ let productos = {
   talla: "xl",
   precio: 110,
 };
-// console.log (precio)
-console.log(productos.precio);
 
-if (productos.precio === 11000) {
+console.log(productos.precio + 10 + " Hola Mundo")
+
+console.log(`${productos.precio + 10} Hola Mundo`)
+
+// console.log (precio)
+/* console.log(productos.precio); */
+
+if (productos.precio === 110) {
   let suma = productos.precio + productos.precio;
-  console.log(suma);
+  /* console.log(suma); */
 } else {
   alert("error");
 }
@@ -69,3 +95,34 @@ if (productos.precio === 11000) {
 // console.log(nuevaVariable)
 // console.log("array => ", nombreVariable)
 // console.log("objeto => ", persona)
+
+/* FUNCIONES */
+
+/* function funcionVintage (){
+}  */
+
+const newFunction = (elemento1, elemento2) => {  
+  let suma = elemento1 + elemento2
+  return suma
+}
+
+let resultado1 = newFunction(1,2)
+let resultado2 = newFunction("Hola ", "Mundo")
+let resultado3 = newFunction("Chao ", 2)
+
+/* console.log(resultado1)
+console.log(resultado2)
+console.log(resultado3) */
+
+const funcionEjemplo = (nota1, nota2, nota3) => {
+  let suma = nota1 + nota2 + nota3
+  let promedio = suma / 3
+  return promedio
+}
+
+let primerPromedio = funcionEjemplo (70,60,50)
+console.log(primerPromedio)
+
+
+
+  
